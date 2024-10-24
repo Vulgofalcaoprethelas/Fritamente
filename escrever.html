@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/escrever/cerebro.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>FM - Escreva</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="midias/index/Banner.png" alt="Banner" width="100%">
+        <nav id="nav1">
+            <ul>
+                <li id="li1"><a href="index.html">Início</a></li>
+                <li id="li1"><a href="livros.html">Livros</a></li>
+                <li id="li1"><a href="escrever.html">Escrever</a></li>
+                <li id="li1"><a href="planos.html">Planos</a></li>
+                <li id="li1"><a href="chats.html">Chats</a></li>
+                <li id="li1"><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+
+    <div class="container">
+        <h1>Envio de Arquivos</h1>
+
+        <div class="upload-section" id="uploadSection">
+            <label for="fileInput">Arraste e solte seus arquivos aqui ou clique para fazer o upload</label>
+            <input type="file" id="fileInput" multiple>
+        </div>
+
+        <div class="form-group">
+            <label for="fileDescription">Descrição do Arquivo</label>
+            <textarea id="fileDescription" placeholder="Escreva uma breve descrição do arquivo..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Gênero</label>
+            <input type="text" id="name" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail para contato</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="form-group">
+            <label for="terms">Concordo com os <a href="termos.html">Termos de Uso</a></label>
+            <input type="checkbox" id="terms" required>
+        </div>
+
+        <button class="submit-btn" id="submitBtn">Enviar Arquivo</button>
+
+        <p class="confirmation-message" id="confirmationMessage">Seu arquivo foi enviado com sucesso!</p>
+    </div>
+
+    <footer>
+        <p>2024 @FritaMente. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

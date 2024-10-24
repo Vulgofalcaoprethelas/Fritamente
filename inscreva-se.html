@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/index/user.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>FM - Início</title>
+</head>
+<body>
+    <header>
+        <img src="midias/index/Banner.png" alt="Banner" width="100%">
+        <nav id="nav1">
+            <ul>
+                <li id="li1"><a href="index.html">Início</a></li>
+                <li id="li1"><a href="livros.html">Livros</a></li>
+                <li id="li1"><a href="escrever.html">Escrever</a></li>
+                <li id="li1"><a href="planos.html">Planos</a></li>
+                <li id="li1"><a href="chats.html">Chats</a></li>
+                <li id="li1"><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Inscreva-se</h1>
+            <form id="signup-form">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <label for="confirma-senha">Confirme a Senha</label>
+                <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" maxlength="15" onkeyup="handlePhone(event)" required>
+
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                <h2>Endereço</h2>
+
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" name="rua" placeholder="Nome da Rua" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" placeholder="Estado" required>
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="CEP" required>
+
+                <h2>Escolha seu Plano</h2>
+
+                <label for="plano">Plano</label>
+                <select id="plano" name="plano">
+                    <option value="basico">Plano Básico - Grátis</option>
+                    <option value="intermediario">Plano Intermediário - R$10,99</option>
+                    <option value="avancado">Plano Avançado - R$16,99</option>
+                </select>
+
+                <h2>Preferências</h2>
+                <label>
+                    Receber notificações por e-mail <input type="checkbox" name="preferencias" value="notificacoes"> 
+                </label>
+                <label>
+                    Receber notificações por SMS <input type="checkbox" name="preferencias" value="sms">
+                </label>
+
+                <label>
+                    Receber ofertas exclusivas <input type="checkbox" name="preferencias" value="ofertas"> 
+                </label>
+
+                <label>
+                    Concordo com os <a href="termos.html">Termos de Serviço</a><input type="checkbox" name="termos" required> 
+                </label>
+            </form>
+
+            <a href="agradecimento.html"><button>Inscrever-se</button></a> <a href="index.html"><button>Sair</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 @FritaMente. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>

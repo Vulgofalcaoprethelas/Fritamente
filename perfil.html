@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/index/user.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>FM - Início</title>
+</head>
+<body>
+    <header>
+        <img src="midias/index/Banner.png" alt="Banner" width="100%">
+        <nav id="nav1">
+            <ul>
+                <li id="li1"><a href="index.html">Início</a></li>
+                <li id="li1"><a href="livros.html">Livros</a></li>
+                <li id="li1"><a href="escrever.html">Escrever</a></li>
+                <li id="li1"><a href="planos.html">Planos</a></li>
+                <li id="li1"><a href="chats.html">Chats</a></li>
+                <li id="li1"><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-section">
+            <div class="profile-header">
+                <h1>Bem-vindo, [Nome do Usuário]</h1>
+                <a href="paginainicallogado.html"><button class="btn-logout">Sair</button></a>
+            </div>
+    
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="midas/user.png" alt="Foto de Perfil">
+                    <input type="file" id="upload-photo" hidden>
+                    <label for="upload-photo" class="btn-upload">Alterar Foto</label>
+                </div>
+    
+                <div class="user-details">
+                    <h2>Informações da Conta</h2>
+                    <p><strong>Nome:</strong> [Nome do Usuário]</p>
+                    <p><strong>E-mail:</strong> [E-mail do Usuário]</p>
+                    <p><strong>Plano Atual:</strong> [Nome do Plano]</p>
+                    <button class="btn-plan">Alterar Plano</button>
+                </div>
+            </div>
+    
+            <div class="profile-settings">
+                <h2>Configurações de Conta</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" value="[Nome do Usuário]" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" value="[E-mail do Usuário]" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="password">Alterar Senha:</label>
+                        <input type="password" id="password" placeholder="Nova Senha">
+                    </div>
+    
+                    <button type="submit" class="btn-save">Salvar Alterações</button>
+                </form>
+            </div>
+    
+            <div class="profile-history">
+                <h2>Histórico de Atividades</h2>
+                <ul>
+                    <li>Atividade recente: Acesso ao curso [Nome do Curso] - [Data]</li>
+                    <li>Plano atualizado para [Plano Intermediário] - [Data]</li>
+                    <li>Conteúdo adicionado à sua lista - [Nome do Conteúdo] - [Data]</li>
+                    <!-- Mais atividades aqui -->
+                </ul>
+            </div>
+    
+            <div class="profile-notifications">
+                <h2>Notificações</h2>
+                <p>Você tem [X] novas notificações.</p>
+                <ul>
+                    <li>Desconto de 10% no plano anual disponível até [Data]</li>
+                    <li>Novos cursos adicionados à sua área de interesse!</li>
+                    <!-- Mais notificações aqui -->
+                </ul>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>2024 @FritaMente. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
